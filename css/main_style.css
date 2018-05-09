@@ -1,0 +1,144 @@
+html, body, .row{
+  margin: 0;
+  padding: 0;
+}
+
+/* immagine di sinistra */
+.img-full-height {
+  height: 100vh;
+  position: relative;
+  background-image: url('../images/background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.effetto-figo {
+  background-color: #fafafa;
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  right: 0;
+  transition: 0.3s all ease;
+  clip-path: polygon(100% 100%, 100% 0%, 0% 100%, 100% 100%);
+}
+
+.nascondi-effetto-figo {
+  transition: 0.3s all ease;
+  width: 100%;
+  clip-path: none;
+}
+
+/* FINE immagine di sinistra */
+
+
+/* sezione di destra */
+.text-full-height {
+  height: 100vh;
+  background-color: #fafafa;
+  position: relative;
+}
+
+.social-container {
+  opacity: 0;
+  position: absolute;
+  bottom: 24px;
+  height: 48px;
+  line-height: 48px;
+  margin-left: 16px;
+}
+
+.social-logo {
+  height: 32px;
+  width: 32px;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.text-container {
+  position: absolute;
+  top: 50%;
+  transform: translate(0%,-50%);
+  opacity: 0;
+}
+
+.title-big {
+  margin: 0;
+  font-size: 32px;
+  font-weight: normal;
+}
+
+.description {
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.pad {
+  padding: 0;
+  padding-right: 8px;
+}
+
+.button-container {
+  margin-top: 16px;
+}
+
+button {
+  width: 100%;
+  height: 48px;
+  outline: none;
+  border: 1px solid #2F80ED;
+  color: #2F80ED;
+  background-color: rgba(0,0,0,0);
+  box-shadow: none;
+  font-size: 16px;
+  border-radius: 4px;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+button:after {
+  position: absolute;
+  transition: .3s;
+  content: '';
+  width: 0;
+  right: 0%;
+  bottom: 0;
+  background-color: #2F80ED;
+  height: 125%;
+  right: -10%;
+  -webkit-transform: skewX(-30deg);
+          transform: skewX(-30deg);
+  z-index: -1;
+}
+
+button:hover {
+  color: #fff;
+}
+
+button:hover:after {
+  width: 130%;
+  right: -15%;
+}
+
+.info-container {
+  height: 100vh;
+  display: none;
+  opacity: 0;
+  padding-top: 24px;
+}
+
+.info-container .title-big {
+  margin-top: 8px;
+}
+
+.text-icon-left {
+  margin: 0;
+  font-size: 16px;
+  height: 48px;
+  line-height: 48px;
+}
+
+.material-icons {
+  color: rgba(0,0,0.54);
+}

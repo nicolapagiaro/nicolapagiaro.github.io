@@ -1,0 +1,14 @@
+@font-face {
+    font-family: ProductSans;
+    src: url('../fonts/Product Sans Reular.ttf');
+}
+
+html, body {
+  font-family: ProductSans, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #2F80ED;
+  display: inline-block;
+}
