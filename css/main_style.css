@@ -62,15 +62,30 @@ html, body, .row{
   opacity: 0;
 }
 
+.section {
+  margin-top: 32px;
+}
+
 .title-big {
   margin: 0;
   font-size: 32px;
   font-weight: normal;
+  margin-bottom: 16px;
+  color: rgba(0,0,0,0.87);
+}
+
+.title-med {
+  margin: 0;
+  font-size: 24px;
+  font-weight: normal;
+  margin-bottom: 16px;
+  color: rgba(0,0,0,0.87);
 }
 
 .description {
   margin-top: 20px;
   font-size: 16px;
+  color: rgba(0,0,0,0.54);
 }
 
 .pad {
@@ -122,10 +137,11 @@ button:hover:after {
 }
 
 .info-container {
-  height: 100vh;
+  position: relative;
+  top: 50%;
+  transform: translate(0%,-50%);
   display: none;
   opacity: 0;
-  padding-top: 24px;
 }
 
 .info-container .title-big {
@@ -133,12 +149,56 @@ button:hover:after {
 }
 
 .text-icon-left {
-  margin: 0;
-  font-size: 16px;
-  height: 48px;
-  line-height: 48px;
+  position: relative;
+  height: 32px;
 }
 
-.material-icons {
-  color: rgba(0,0,0.54);
+.text-icon-left span {
+  position: absolute;
+  font-size: 16px;
+  line-height: 32px;
+  margin-left: 8px;
+  color: rgba(0,0,0,0.87);
+  max-height: 32px;
+}
+
+.material-icons.ic-grey { 
+  line-height: 32px;
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.two-item-list {
+  transition: 0.3s all ease;
+  height: 72px;
+  position: relative;
+}
+
+.two-item-list:hover {
+  background-color: rgba(0,0,0,0.08);
+}
+
+.list-content {
+  position: absolute;
+  top: 50%;
+  transform: translate(0%,-50%);
+}
+
+.list-item-link {
+  color: black;
+  display: block;
+}
+
+.two-item-list p{
+  margin: 0;
+}
+
+.two-item-list .first-line {
+  font-size: 16px;
+  color: rgba(0,0,0,0.87);
+}
+
+.two-item-list .second-line {
+  margin-top: 4px;
+  font-size: 14px;
+  color: rgba(0,0,0,0.54);
 }
