@@ -46,7 +46,7 @@ btnProgetti.addEventListener('click', (e) => {
     divEffetto.classList.add("nascondi-effetto-figo")
     
     // cambio pagina
-    changePage("pages/progetti.html")
+    changePage("/progetti")
   }, WAIT_ANIM_TIME)
   
 })
