@@ -14,15 +14,8 @@ a {
 }
 
 .load-image {
-  background-color: #fafafa;
-  transition: 0.3s all ease;
-  background-image: url('/images/icon.ico');
+  background-image: url('/images/square_loading.gif');
   background-repeat: no-repeat;
+  background-size: cover;
   background-position: center;
-  animation: cirlce 0.3s infinite;
 }
-
-@keyframes circle {
-    0%   {transform: rotate(360deg);}
-}
-
