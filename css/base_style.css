@@ -16,6 +16,6 @@ a {
 .load-image {
   background-image: url('/images/loading-1.gif');
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
 }
