@@ -19,7 +19,7 @@ a {
   background-image: url('/images/icon.ico');
   background-repeat: no-repeat;
   background-position: center;
-  animation: cirlce infinite;
+  animation: cirlce 0.3s infinite;
 }
 
 @keyframes circle {
