@@ -107,6 +107,7 @@ button {
   position: relative;
   cursor: pointer;
   overflow: hidden;
+  z-index: 2;
 }
 
 button:after {
