@@ -73,7 +73,7 @@ btnInfo.addEventListener('click', (e)=> {
       fadeIn(infoContainer)
       
       // metto l'altra immagine
-      divImg.style.backgroundImage = "url('./images/background-info.jpg')"
+      loadImage(divImg, "./images/background-info.jpg")
       
       // mostro l'immagine
      divEffetto.classList.remove("nascondi-effetto-figo")
@@ -103,7 +103,7 @@ btnBackLogin.addEventListener('click', (e)=> {
       fadeIn(socialContainer)
       
       // metto l'altra immagine
-      divImg.style.backgroundImage = "url('./images/background.jpg')"
+      loadImage(divImg, "./images/background.jpg")
       
       // mostro l'immagine
      divEffetto.classList.remove("nascondi-effetto-figo")

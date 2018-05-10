@@ -4,13 +4,6 @@ html, body, .row{
 }
 
 /* immagine di sinistra */
-.load-image {
-  background-color: #e0e0e0;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
 .img-full-height {
   height: 100vh;
   position: relative;
