@@ -165,8 +165,6 @@ button:hover:after {
 .material-icons.ic-grey { 
   line-height: 32px;
   color: rgba(0, 0, 0, 0.54);
-  font-size: 12sp;
-  font-family: 'ProductSans';
 }
 
 .two-item-list {
