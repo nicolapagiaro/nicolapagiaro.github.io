@@ -15,8 +15,7 @@ for(let i=0; i < images.length; i++) {
  */
 function loadImage(divImg, srcImage) {
   divImg.style.backgroundImage = "none"
-  if(!divImg.classList.contains("load-image"))
-    divImg.classList.add("load-image")
+  divImg.classList.add("load-image")
   let img = new Image()
   img.src = srcImage;
   img.onload = function() {
