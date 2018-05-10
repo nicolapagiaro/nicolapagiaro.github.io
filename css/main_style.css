@@ -1,6 +1,7 @@
 html, body, .row{
   margin: 0;
   padding: 0;
+  background-color: #fafafa;
 }
 
 /* immagine di sinistra */
@@ -21,6 +22,7 @@ html, body, .row{
 }
 
 .nascondi-effetto-figo {
+  background-color: #fafafa;
   transition: 0.3s all ease;
   width: 100%;
   clip-path: none;
