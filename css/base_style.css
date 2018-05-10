@@ -14,8 +14,8 @@ a {
 }
 
 .load-image {
-  background-image: url('/images/loading.gif');
+  background-image: url('/images/loading-1.gif');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
 }
