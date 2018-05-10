@@ -14,7 +14,7 @@ a {
 }
 
 .load-image {
-  background-image: url('/images/square_loading.gif');
+  background-color: #fff;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

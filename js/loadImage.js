@@ -6,7 +6,9 @@ for(let i=0; i < images.length; i++) {
   let img = new Image()
   img.src = images[i].dataset.image;
   img.onload = function() {
+    images[i].style.opacity = "0.1"
     images[i].style.backgroundImage = "url('" + img.src + "')"
+    fadeIn(images[i])
   }
 }
 
@@ -19,6 +21,8 @@ function loadImage(divImg, srcImage) {
   let img = new Image()
   img.src = srcImage;
   img.onload = function() {
-    divImg.style.backgroundImage = "url('" + srcImage + "')"
+     divImg.style.opacity = "0.1"
+     divImg.style.backgroundImage = "url('" + srcImage + "')"
+     fadeIn(divImg)
   }
 }
