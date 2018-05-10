@@ -1,6 +1,7 @@
 /*  
  * Variabili
  */
+let isMobile = navigator.userAgent.match(/(iPhone|iPod|iPad|Android|BlackBerry)/); 
 const WAIT_ANIM_TIME = 250
 const WAIT_ANIM_TIME_2 = 200
 const btnProgetti = document.getElementById("btnProgetti")
@@ -15,7 +16,10 @@ const divImg = document.getElementsByClassName('img-full-height')[0]
 /*
  * Animazione del fadeIn
  */
-// nascondo l'immagine
+if(isMobile) {
+  divImg.classList.remove("load-image")
+}
+
 divEffetto.classList.add("nascondi-effetto-figo")
 setTimeout(() => {
   fadeIn(mainTextContainer)
@@ -73,7 +77,8 @@ btnInfo.addEventListener('click', (e)=> {
       fadeIn(infoContainer)
       
       // metto l'altra immagine
-      loadImage(divImg, "./images/background-info.jpg")
+      if(!isMobile)
+        loadImage(divImg, "./images/background-info.jpg")
       
       // mostro l'immagine
      divEffetto.classList.remove("nascondi-effetto-figo")
@@ -103,7 +108,8 @@ btnBackLogin.addEventListener('click', (e)=> {
       fadeIn(socialContainer)
       
       // metto l'altra immagine
-      loadImage(divImg, "./images/background.jpg")
+      if(!isMobile)
+        loadImage(divImg, "./images/background.jpg")
       
       // mostro l'immagine
      divEffetto.classList.remove("nascondi-effetto-figo")
