@@ -1,6 +1,5 @@
 const FADE_TIME = 50
 
-
 /*
  * Funzione che fa il fade out di un oggetto in javascript puro
  */

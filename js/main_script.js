@@ -18,9 +18,9 @@ const divImg = document.getElementsByClassName('img-full-height')[0]
  */
 if(isMobile) {
   divImg.classList.remove("load-image")
+  divEffetto.classList.add("nascondi-effetto-figo")
 }
 
-divEffetto.classList.add("nascondi-effetto-figo")
 setTimeout(() => {
   fadeIn(mainTextContainer)
   fadeIn(socialContainer)
