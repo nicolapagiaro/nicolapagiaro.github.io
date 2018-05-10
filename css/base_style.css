@@ -14,7 +14,7 @@ a {
 }
 
 .load-image {
-  background-color: #fafafa;
+  background-image: url('/images/loading.gif');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
