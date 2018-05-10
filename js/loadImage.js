@@ -4,6 +4,6 @@ for(let i=0; i < images.length; i++) {
   img.src = images[i].dataset.image;
   img.onload = function() {
     images[i].style.backgroundImage = "url('" + img.src + "')"
-    console.log(images[i].style.backgroundImage);
+    console.log("Loaded");
   }
 }
