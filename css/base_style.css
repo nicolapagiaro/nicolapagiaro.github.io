@@ -14,8 +14,15 @@ a {
 }
 
 .load-image {
-  background-image: url('/images/titties_loading.gif');
+  background-color: #fafafa;
+  transition: 0.3s all ease;
+  background-image: url('/images/icon.ico');
   background-repeat: no-repeat;
-  background-size: cover;
   background-position: center;
+  animation: cirlce infinite;
 }
+
+@keyframes circle {
+    0%   {transform: rotate(360deg);}
+}
+
