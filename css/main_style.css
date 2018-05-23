@@ -114,14 +114,13 @@ button {
 
 button:after {
   position: absolute;
-  transition: .3s;
+  transition: .4s all ease;
   content: '';
   width: 0;
-  right: 0%;
   bottom: 0;
   background-color: #2F80ED;
-  height: 125%;
-  right: -10%;
+  height: 120%;
+  right: -15%;
   -webkit-transform: skewX(-30deg);
           transform: skewX(-30deg);
   z-index: -1;
@@ -132,8 +131,8 @@ button:hover {
 }
 
 button:hover:after {
-  width: 130%;
-  right: -15%;
+  width: 150%;
+  right: -20%;
 }
 
 .info-container {
@@ -162,7 +161,7 @@ button:hover:after {
   max-height: 32px;
 }
 
-.material-icons.ic-grey { 
+.material-icons.ic-grey {
   line-height: 32px;
   color: rgba(0, 0, 0, 0.54);
 }
