@@ -16,7 +16,7 @@ html, body, .row{
   position: absolute;
   width: 50%;
   height: 100%;
-  right: 0;
+  right: -1px;
   transition: 0.3s all ease;
   clip-path: polygon(100% 100%, 100% 0%, 0% 100%, 100% 100%);
 }
